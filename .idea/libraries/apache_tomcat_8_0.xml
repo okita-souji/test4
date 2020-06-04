@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="apache-tomcat-8.0">
+    <CLASSES>
+      <root url="file://F:/yunie/myeclipse/apache-tomcat-8.0.32-windows-x64/apache-tomcat-8.0.32" />
+      <root url="jar://F:/yunie/myeclipse/apache-tomcat-8.0.32-windows-x64/apache-tomcat-8.0.32/lib/servlet-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://F:/yunie/myeclipse/apache-tomcat-8.0.32-windows-x64/apache-tomcat-8.0.32/webapps/docs/appdev/sample/src" />
+      <root url="file://F:/yunie/myeclipse/apache-tomcat-8.0.32-windows-x64/apache-tomcat-8.0.32/webapps/examples/WEB-INF/classes" />
+      <root url="file://F:/yunie/myeclipse/apache-tomcat-8.0.32-windows-x64/apache-tomcat-8.0.32/webapps/examples/WEB-INF/jsp/applet" />
+      <root url="file://F:/yunie/myeclipse/apache-tomcat-8.0.32-windows-x64/apache-tomcat-8.0.32/webapps/examples/jsp/plugin/applet" />
+      <root url="file://F:/yunie/myeclipse/apache-tomcat-8.0.32-windows-x64/apache-tomcat-8.0.32/work/Catalina/localhost/ROOT" />
+      <root url="file://F:/yunie/myeclipse/apache-tomcat-8.0.32-windows-x64/apache-tomcat-8.0.32/work/Catalina/localhost/Structs2_02" />
+      <root url="file://F:/yunie/myeclipse/apache-tomcat-8.0.32-windows-x64/apache-tomcat-8.0.32/work/Catalina/localhost/Structs2_04" />
+      <root url="file://F:/yunie/myeclipse/apache-tomcat-8.0.32-windows-x64/apache-tomcat-8.0.32/work/Catalina/localhost/bookManage" />
+      <root url="file://F:/yunie/myeclipse/apache-tomcat-8.0.32-windows-x64/apache-tomcat-8.0.32/work/Catalina/localhost/n" />
+      <root url="file://F:/yunie/myeclipse/apache-tomcat-8.0.32-windows-x64/apache-tomcat-8.0.32/work/Catalina/localhost/test" />
+    </SOURCES>
+  </library>
+</component>
