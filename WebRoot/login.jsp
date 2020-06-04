@@ -15,6 +15,6 @@
 		<input type="submit" value="登录"/>
 		<input type="reset" value="清空"/>
 	</form>
-	<a href="index.jsp"><button>回首页</button></a>
+	<a href="index.html"><button>回首页</button></a>
   </body>
 </html>
