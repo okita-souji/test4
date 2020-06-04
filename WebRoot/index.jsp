@@ -4,10 +4,10 @@
 <html>
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>图书系统首页</title>
+  <title>图书管理系统首页</title>
   <style type="text/css">
   h1{text-align:center}
- h4{text-align:left;color:red;}
+ h4{text-align:left;color:black;}
 
  a{text-decoration:none;font-size:20px;color:black;}
  a:hover{text-decoration:underline;font-size:24px;color:red;}    
