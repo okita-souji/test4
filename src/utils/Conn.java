@@ -13,7 +13,7 @@ public class Conn {
 	static Connection conn=null;
 	static{//静态代码块，加载类的同时实现数据库的连接
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
+			Class.forName("com.mysql.jdbc.Driver");
 			conn=DriverManager.getConnection(url, user, password);
 		} catch (SQLException e) {
 			e.printStackTrace();
