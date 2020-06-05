@@ -18,7 +18,7 @@ public class UpdateServlet extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
-		response.setContentType("text/html,charset=utf-8");
+		response.setContentType("text/html;charset=utf-8");
 		int id=Integer.parseInt(request.getParameter("id"));
 		String name=request.getParameter("name");
 		String author=request.getParameter("author");
