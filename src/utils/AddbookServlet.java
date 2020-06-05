@@ -20,7 +20,7 @@ public class AddbookServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
-		response.setContentType("text/html,charset=utf-8");
+		response.setContentType("text/html;charset=utf-8");
 		String name=request.getParameter("name");
 		String author=request.getParameter("author");
 		String press=request.getParameter("press");
@@ -46,7 +46,7 @@ public class AddbookServlet extends HttpServlet {
 				int i=db.update(sql1, o1);
 				if(i>0){
 					JOptionPane.showMessageDialog(null, "添加成功","标题【成功】" , JOptionPane.ERROR_MESSAGE);
-					response.sendRedirect("addbook.html");
+					response.sendRedirect("addbook.jsp");
 				}else{
 					JOptionPane.showMessageDialog(null, "添加失败","标题【失败】" , JOptionPane.ERROR_MESSAGE);
 					response.sendRedirect("addbook.html");
