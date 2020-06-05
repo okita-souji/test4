@@ -20,14 +20,14 @@ public class RegisterServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
-		response.setContentType("text/html,charset=utf-8");
+		response.setContentType("text/html;charset=utf-8");
 		String username=request.getParameter("username");
 		String password=request.getParameter("password");
 		String birthday=request.getParameter("birthday");
 		String gender=request.getParameter("gender");
 		if(username.equals("")||username.equals(null)||password.equals("")||password.equals(null)){
 			JOptionPane.showMessageDialog(null, "用户名或密码不能为空","标题【警告】" , JOptionPane.ERROR_MESSAGE);
-			response.sendRedirect("register.html");
+			response.sendRedirect("register.jsp");
 			return;
 		}
 		
@@ -38,13 +38,13 @@ public class RegisterServlet extends HttpServlet {
 		try {
 			if(rs.next()){
 				JOptionPane.showMessageDialog(null, "该用户已存在","标题【警告】" , JOptionPane.ERROR_MESSAGE);
-				response.sendRedirect("register.html");
+				response.sendRedirect("register.jsp");
 			}else{
 				String sql1="insert into user(USERNAME,PASSWORD,BIRTHDAY,GENDER) values(?,?,?,?)";
 				Object[] o2={username,password,birthday,gender};
 				db.update(sql1, o2);
 				JOptionPane.showMessageDialog(null, "注册成功，即将跳转到登录页面","标题【成功】" , JOptionPane.ERROR_MESSAGE);
-				response.sendRedirect("login.html");
+				response.sendRedirect("login.jsp");
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
