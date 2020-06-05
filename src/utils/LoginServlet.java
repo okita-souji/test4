@@ -20,12 +20,12 @@ public class LoginServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
-		response.setContentType("text/html,charset=utf-8");
+		response.setContentType("text/html;charset=utf-8");
 		String username=request.getParameter("username");
 		String password=request.getParameter("password");
 		if(username==null||username.equals("")||password==null||password.equals("")){
 			JOptionPane.showMessageDialog(null, "账号或密码有误","标题【出错啦】" , JOptionPane.ERROR_MESSAGE);
-			response.sendRedirect("login.html");
+			response.sendRedirect("login.jsp");
 			return;
 		}
 		
@@ -42,7 +42,7 @@ public class LoginServlet extends HttpServlet {
 				request.getRequestDispatcher("book.jsp").forward(request, response);
 			}else{
 				JOptionPane.showMessageDialog(null, "账号或密码错误","标题【出错啦】" , JOptionPane.ERROR_MESSAGE);
-				response.sendRedirect("login.html");
+				response.sendRedirect("login.jsp");
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
