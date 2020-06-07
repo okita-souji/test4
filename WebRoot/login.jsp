@@ -11,7 +11,7 @@
   <body>
   <div id="container">
   <div id="header" style="background-color:#CCBBFF;text-align:center;">
-  图书管理系统</div>
+  登录</div>
   <div id="content" style="background-color:#EEEEEE;height:200px;text-align:center;">
 
   <form action="loginServlet">

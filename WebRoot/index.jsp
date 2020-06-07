@@ -36,7 +36,8 @@
 	</table></div>
  
 	<div id="content" style="background-color:#EEEEEE;height:200px;text-align:center;">
-内容在这里
+<p>我爱好挺多，最大的爱好是读书，读书已成为我的一种生活方式。读书可以让人保持思想活力，让人得到智慧启发，让人滋养浩然之气。</p>
+<p>——习近平</p>
 
 
 </div>
