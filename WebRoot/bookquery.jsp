@@ -14,8 +14,10 @@
     <%
 		ArrayList<Book> booklist=(ArrayList<Book>)session.getAttribute("booklist");
 	%>
-	<h3>图书管理：</h3><a href="addbook.html"><button>添加图书</button></a>&nbsp;&nbsp;
-	<a href="index.html"><button>退出</button></a><br><br>
+	<div id="container">
+  <div id="header" style="background-color:#CCBBFF;text-align:center;">
+  <h3>图书管理</h3><a href="addbook.html"><button>添加图书</button></a></div>
+  <div id="content" style="background-color:#EEEEEE;height:200px;text-align:center;">
 	<table border="1px" cellspacing="0px">
 		<tr><td>编号</td><td>书名</td><td>作者</td><td>出版社</td><td>价格</td></tr>
 		<%
@@ -37,6 +39,10 @@
 		<%}
 		%>
 	</table>
-
+ 
+  </div>
+  <div id="footer" style="background-color:#CCBBFF;clear:both;text-align:center;">
+  <a href="index.jsp"><button>回首页</button></a></div>
+	</div>
   </body>
 </html>

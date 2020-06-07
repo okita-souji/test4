@@ -9,7 +9,11 @@
   </head>
   
   <body>
-    <h3>添加图书：</h3><a href="bookServlet"><button>返回上一层</button></a><br>
+  <div id="container">
+  <div id="header" style="background-color:#CCBBFF;text-align:center;">
+  <h3>添加图书</h3></div>
+  <div id="content" style="background-color:#EEEEEE;height:200px;text-align:center;">
+
 	<form action="addbookServlet"><!-- action是把数据上传到servlet的行为 -->
 		书名：<input type="text" name="name"/><br>
 		作者：<input type="text" name="author"/><br>
@@ -21,7 +25,14 @@
 			</select><br>
 		价格：<input type="number" name="price"/><br>
 		<input type="submit" value="确认添加"/>
+		<a href="bookServlet"><button>取消添加</button></a><br>
 	</form>
+  
+  </div>
+  <div id="footer" style="background-color:#CCBBFF;clear:both;text-align:center;">
+  <a href="index.jsp"><button>回首页</button></a></div>
+	</div>
+    
 
   </body>
 </html>

@@ -18,8 +18,13 @@
 		String press=book.getPress();
 		double price=book.getPrice();
 	%>
-	<h3>更改信息：</h3><a href="bookServlet"><button>返回上一层</button></a><br>
-	<form action="confirmUpdateServlet">
+	
+	
+<div id="container">
+  <div id="header" style="background-color:#CCBBFF;text-align:center;">
+  <h3>更改信息</h3></div>
+  <div id="content" style="background-color:#EEEEEE;height:200px;text-align:center;">
+<form action="confirmUpdateServlet">
 		<input type="hidden" value=<%=id %> name="id">
 		编&nbsp;&nbsp;&nbsp;号：<span><%=id %></span><br>
 		<input type="hidden" name="hiddenname" value=<%=name %>>
@@ -35,6 +40,11 @@
 		<input type="submit" value="确认更改">
 	</form>
 	<a href="bookServlet"><button>取消修改</button></a>
+  </div>
+  <div id="footer" style="background-color:#CCBBFF;clear:both;text-align:center;">
+  <a href="index.jsp"><button>回首页</button></a></div>
 
+
+	</div>
   </body>
 </html>
